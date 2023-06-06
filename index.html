@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <title>K-travel</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"><span>T</span>ravel </a>
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#book">book</a>
+      <a href="#packages">packages</a>
+      <a href="#services">services</a>
+      <a href="#gallery">gallery</a>
+      <a href="#review">review</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here ..." />
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+  <div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+      <h3>Login</h3>
+      <input type="email" class="box" placeholder="enter your email" />
+      <input type="password" class="box" placeholder="enter your password" />
+      <input type="submit" value="Login now" class="btn" />
+      <input type="checkbox" id="remember" />
+      <label for="remember">remember me</label>
+      <p>계정을 잃어버렸니? <a href="#">찾으러 가기</a></p>
+      <p>계정이 없니?<a href="#">회원가입 하기</a></p>
+    </form>
+  </div>
+  <section class="home" id="home">
+    <div class="content">
+      <h3>Welcome to the travel website.</h3>
+      <p>Are you ready to go on a trip?</p>
+      <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="video-container">
+      <video src="main/1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+    <div class="controls">
+      <span class="vid-btn active" data-src='main/1.mp4'></span>
+      <span class="vid-btn" data-src='main/2.mp4'></span>
+      <span class="vid-btn" data-src="main/3.mp4"></span>
+      <span class="vid-btn" data-src="main/4.mp4"></span>
+    </div>
+  </section>
+  <section class="book" id="book">
+    <h1 class="heading">
+      <span>H</span>
+      <span>o</span>
+      <span>w</span>
+      <span class="space"></span>
+      <span>l</span>
+      <span>o</span>
+      <span>n</span>
+      <span>g</span>
+    </h1>
+    <div class="row">
+      <div class="image">
+        <img src="book.jpg" alt="" />
+      </div>
+      <form action="">
+        <div class="inputBox">
+          <h3>where to</h3>
+          <input type="text" placeholder="place name" />
+        </div>
+        <div class="inputBox">
+          <h3>how many</h3>
+          <input type="number" placeholder="number of guests" />
+        </div>
+        <div class="inputBox">
+          <h3>arrivals</h3>
+          <input type="date" placeholder="number of guests" />
+        </div>
+        <div class="inputBox">
+          <h3>leaving</h3>
+          <input type="date" placeholder="number of guests" />
+        </div>
+        <input type="submit" class="btn" vlaue="book now" />
+      </form>
+    </div>
+  </section>
+  <section class="packages" id="packages">
+    <h1 class="heading">
+      <span>P</span>
+      <span>a</span>
+      <span>c</span>
+      <span>k</span>
+      <span>a</span>
+      <span>g</span>
+      <span>e</span>
+      <span>s</span>
+    </h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="packages/f1.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> korea</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$90.00<span>$120.00</span></div>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="packages/f2.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> korea</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$90.00<span>$120.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="packages/f3.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> korea</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$90.00<span>$120.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="packages/f4.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> korea</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$90.00<span>$120.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="packages/f5.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> japan</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$80.00<span>$100.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="packages/f6.jpg" alt="" />
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> japan</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">$50.00 <span>$90.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <h1 class="heading">
+      <span>S</span>
+      <span>e</span>
+      <span>r</span>
+      <span>v</span>
+      <span>i</span>
+      <span>c</span>
+      <span>e</span>
+      <span>s</span>
+    </h1>
+    <div class="box-container">
+      <div class="box">
+        <i class="fas fa-hotel"></i>
+        <h3>afforoable hotel</h3>
+      </div>
+      <div class="box">
+        <i class="fas fa-utensils"></i>
+        <h3>afforoable food</h3>
+      </div>
+      <div class="box">
+        <i class="fas fa-bullhorn"></i>
+        <h3>safety guide</h3>
+      </div>
+      <div class="box">
+        <i class="fas fa-globe-asia"></i>
+        <h3>safety guide</h3>
+      </div>
+      <div class="box">
+        <i class="fas fa-plane"></i>
+        <h3>safety guide</h3>
+      </div>
+      <div class="box">
+        <i class="fas fa-hiking"></i>
+        <h3>safety guide</h3>
+      </div>
+    </div>
+  </section>
+  <section class="gallery" id="gallery">
+    <h1 class="heading">
+      <span>G</span>
+      <span>a</span>
+      <span>l</span>
+      <span>l</span>
+      <span>e</span>
+      <span>r</span>
+      <span>y</span>
+    </h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="gallery/t1.jpg" alt="" />
+        <div class="content">
+          <h3>amazing places</h3>
+          <p>You’re her hero, Scott. Just be the person that she already thinks you are.</p>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="gallery\t2.jpg" alt="" />
+        <div class="content">
+          <h3>amazing places</h3>
+          <p>You’re her hero, Scott. Just be the person that she already thinks you are.</p>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="gallery\t3.jpg" alt="" />
+        <div class="content">
+          <h3>amazing places</h3>
+          <p>You’re her hero, Scott. Just be the person that she already thinks you are.</p>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="gallery\t4.jpg" alt="" />
+        <div class="content">
+          <h3>amazing places</h3>
+          <p>You’re her hero, Scott. Just be the person that she already thinks you are.</p>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="gallery\t5.jpg" alt="" />
+        <div class="content">
+          <h3>amazing places</h3>
+          <p>You’re her hero, Scott. Just be the person that she already thinks you are.</p>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="gallery\t6.jpg" alt="" />
+        <div class="content">
+          <h3>amazing places</h3>
+          <p>You’re her hero, Scott. Just be the person that she already thinks you are.</p>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="gallery\t7.jpg" alt="" />
+        <div class="content">
+          <h3>amazing places</h3>
+          <p>You’re her hero, Scott. Just be the person that she already thinks you are.</p>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="gallery\t8.jpg" alt="" />
+        <div class="content">
+          <h3>amazing places</h3>
+          <p>You’re her hero, Scott. Just be the person that she already thinks you are.</p>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="gallery\t9.jpg" alt="" />
+        <div class="content">
+          <h3>amazing places</h3>
+          <p>You’re her hero, Scott. Just be the person that she already thinks you are.</p>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="review" id="review">
+    <h1 class="heading">
+      <span>R</span>
+      <span>e</span>
+      <span>v</span>
+      <span>i</span>
+      <span>e</span>
+      <span>w</span>
+    </h1>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="review/1.jpg" />
+            <h3>kyonam</h3>
+            <p>Scott. Just be the person that she already thinks you are</p>
+            <div class=" stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="review/2.jpg" />
+            <h3>kyonam2</h3>
+            <p>Scott. Just be the person that she already thinks you are</p>
+            <div class=" stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="review/3.jpg" />
+            <h3>kyonam3</h3>
+            <p>Scott. Just be the person that she already thinks you are</p>
+            <div class=" stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
